@@ -11,13 +11,15 @@
 </head>
 
 <body>
-    <header class="header">
+    <header>
         <div class="cont-nav">
             <nav class="nav">
                 <ul class="nav-list">
+                    <li class="li"><a href="#fr-inicio">Inicio</a></li>
+                    <li class="li"><a href="#section1">Sobre mim</a></li>
                     <li class="li"><a href="#projetos">Projetos</a></li>
                     <li class="li"><a href="#habilidades">Habilidades</a></li>
-                    <li class="li"><a href="contato.html">Contato</a></li>
+                    <li class="li"><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -86,9 +88,14 @@
     <section id="habilidades">
         <h2>Habilidades Técnicas</h2>
 
+        <p>C#</p>
+        <div>
+            <span id="c-sharp">30%</span>
+        </div>
+
         <p>Python</p>
         <div>
-            <span id="python">80%</span>
+            <span id="python">60%</span>
         </div>
 
         <p>HTML 5</p>
@@ -108,16 +115,16 @@
             <h3>Se conecte comigo</h3>
 
             <div id="icons">
-                <a href="https://www.linkedin.com/in/thicode/" target="_blank">
+                <a href="https://www.linkedin.com/in/guilherme-correa-s/" target="_blank">
                     <i class="fa fa-linkedin-square" aria-hidden="true"></i>
                 </a>
 
-                <a href="https://github.com/codethi" target="_blank">
+                <a href="https://github.com/guilherme-correa-s/" target="_blank">
                     <i class="fa fa-github" aria-hidden="true"></i>
                 </a>
 
-                <a href="https://www.instagram.com/thi.code/" target="_blank">
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                <a href="https://t.me/guisC26/" target="_blank">
+                    <i class="fa fa-telegram" aria-hidden="true"></i>
                 </a>
             </div>
 
@@ -127,7 +134,7 @@
 
             <h3>Mande uma mensagem</h3>
 
-            <form>
+            <form action="/contato" method="POST">
 
                 <label for="nome">Nome</label>
                 <input id="nome" name="nome" type="text">
@@ -138,13 +145,23 @@
                 <label for="mensagem">Mensagem</label>
                 <textarea name="mensagem" id="mensagem" cols="10" rows="5"></textarea>
 
-                <button id="enviar">Enviar</button>
+                <button type="submit" id="enviar" disabled>Enviar</button>
 
             </form>
+
+            <div id="loader">
+                <p>Enviando mensagem</p>
+                <div id="loading"></div>
+            </div>
 
         </div>
 
     </section>
+    <footer>
+        <hr>
+        <p>Todos os direitos reservados: <a id="guiLink" target="_blank" href="https://t.me/guisC26/"> Gui Corrêa </a> &copy;</p>
+     </footer>
+    <script src="../static/js/script.js"></script>
 </body>
 
 </html>

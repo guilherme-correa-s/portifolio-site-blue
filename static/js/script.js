@@ -60,3 +60,11 @@ function enableBtn(nome, email, msg) {
         btnForm.disabled = true
     }
 }
+
+btnForm.addEventListener('click', () => {
+    const load = document.querySelector('#loader')
+    const form = document.querySelector('form')
+
+    load.style.display = 'flex'
+    form.style.display = 'none'
+})
