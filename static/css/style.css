@@ -54,7 +54,7 @@ section#section1{
 }
 section#section1 p strong{
     color: #8257e5;
-}
+   }
 section#section1 div#img-perfil{
    margin-left: 3em;
 }
@@ -250,6 +250,24 @@ section#contato div#form form button{
    width: 40%;
 }
 
+section#contato div#form form button:disabled{
+   border: 1px solid #ccc;
+   background-color: white;
+   color: #ccc;
+   padding: 1rem;
+   font-size: 1vw;
+   font-weight: 600;
+   border-radius: .5rem;
+   display: block;
+   margin: auto;
+   cursor: pointer;
+   transition: .6s ease-out;
+   width: 40%;
+}
+
 section#contato div#form form button:hover{
    transform: scale(1.2);
+}
+section#contato div#form form button:hover:disabled{
+   transform: scale(1);
 }
